@@ -249,7 +249,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") center;		
+		background: #348cb2 url("bg.jpg") center;		
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -375,7 +375,7 @@ input, select, textarea {
 		-ms-animation: overlay 1.5s 1.5s forwards;
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
-		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+		background-image: url("overlay-pattern.png"), url("overlay.svg");
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -1139,7 +1139,7 @@ input, select, textarea {
 }
 
 #bg {
-    background: #348cb2 url("/bg.jpg") center center;
+    background: #348cb2 url("bg.jpg") center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;

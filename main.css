@@ -1139,7 +1139,7 @@ input, select, textarea {
 }
 
 #bg {
-    background: #348cb2 url("bg.jpg") center center;
+    background: #348cb2 url("images/bg.jpg") center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -1219,8 +1219,8 @@ input, select, textarea {
 
 @media screen and (max-width: 736px) {
     #bg {
-        /* Moins de mouvement sur mobile pour économiser la batterie */
-        animation: bgZoom 50s ease-in-out infinite;
+        /* Animation légère sur tablette */
+        animation: bgParallax 50s ease-in-out infinite;
     }
     
     #bg::after {
@@ -1232,12 +1232,14 @@ input, select, textarea {
 @media screen and (max-width: 480px) {
     #bg {
         background-position: center center;
-        animation: none;
+        /* Animation activée même sur petit mobile */
+        animation: bgParallax 60s ease-in-out infinite;
         transform: scale(1.05);
     }
     
     #bg::before {
-        animation: none;
+        /* Garde l'effet vignette animé */
+        animation: vignetteEffect 30s ease-in-out infinite;
         opacity: 0.4;
     }
 }

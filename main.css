@@ -1318,11 +1318,18 @@ input, select, textarea {
         /* Garde l'effet vignette animé */
         animation: vignetteEffect 30s ease-in-out infinite;
         opacity: 0.4;
-    }
-}	
+   	 	}
+	}	
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 736px) {
 	    .header-text {
 	        margin-top: -4em;
 	    }
 	}
+
+	@media screen and (max-width: 1280px) {
+   		 .header-text {
+        	margin-top: -2.5em;
+	    }
+	}
+

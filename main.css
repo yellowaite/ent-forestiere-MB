@@ -1219,7 +1219,7 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 736px) {
-    /* Animation pour tablette/iPad - zoom maximum pour garantir couverture totale */
+    /* Animation spécifiquement pour tablette */
     @keyframes bgParallaxMobile {
         0% {
             transform: translate3d(0, 0, 0) scale(1.35);
@@ -1231,20 +1231,33 @@ input, select, textarea {
             transform: translate3d(0, 0, 0) scale(1.35);
         }
     }
-    
+
+    /* Réglages sûrs pour éviter la ligne blanche clignotante */
     #bg {
         animation: bgParallaxMobile 40s ease-in-out infinite;
         background-size: cover;
         background-position: center center;
-        /* Force le débordement pour couvrir tout l'écran */
-        min-width: 110%;
-        min-height: 110%;
-        left: -5%;
-        top: -5%;
+
+        /* On agrandit légèrement pour éviter d'apercevoir le bord */
+        width: 105%;
+        height: 105%;
+        left: -2.5%;
+        top: -2.5%;
+
+        position: fixed;
+        transform-origin: center center;
+
+        /* Optimisations GPU et rendu */
+        backface-visibility: hidden;
+        will-change: transform;
+        transform-style: preserve-3d;
+
+        /* Empêche l'apparition de débordements visibles */
+        overflow: hidden;
     }
-    
+
+    /* Désactive les particules sur tablette */
     #bg::after {
-        /* Désactive les particules sur mobile */
         display: none;
     }
 }

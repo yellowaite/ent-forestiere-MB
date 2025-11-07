@@ -214,22 +214,23 @@ input, select, textarea {
 	}
 
 	.page-links a {
-		display: inline-block;
-		padding: 0.75em 2em;
-		background: rgba(255, 255, 255, 0.3);
-		border: solid 1px rgba(255, 255, 255, 0.5);
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		border-radius: 4px;
-		color: #fff;
-		text-decoration: none;
-		transition: all 0.3s ease;
-	}
+    display: inline-block;
+    padding: 0.75em 2em;
+    background: rgba(255, 255, 255, 0.85); /* fond très clair */
+    border: none;
+    border-radius: 6px;
+    color: #222; /* texte foncé pour contraste */
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ombre douce */
+    transition: all 0.3s ease;
+}
 
 	.page-links a:hover {
-		background: rgba(255, 255, 255, 0.2);
-		border-color: rgba(255, 255, 255, 0.5);
-		transform: translateY(-2px);
-	}
+    background: #fff;
+    color: #000;
+    transform: translateY(-2px);
+}
 
 /* BG */
 

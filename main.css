@@ -81,10 +81,8 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		overflow-y: auto;
-		overscroll-behavior-y: contain;
-		
-	}
+		overflow: hidden;
+		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;

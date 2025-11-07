@@ -1333,3 +1333,9 @@ input, select, textarea {
 	    }
 	}
 
+	@media screen and (orientation: landscape) {
+		    .header-text {
+		        margin-top: -2em;
+		 }
+	}
+

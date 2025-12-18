@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Éviter les reflows */
+body {
+  font-display: swap;
+}
 
 
 html, body, div, span, applet, object,
